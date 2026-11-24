@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VÉRITÉ ATELIER | Luxury Fashion & Haute Couture</title>
+  <!-- Google Fonts for High-Fashion Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Store announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span class="pulse-dot"></span>
+        <span>AUTUMN / WINTER 2026 ARCHIVE IS NOW LIVE</span>
+      </div>
+      <div class="announcement-center">
+        <span>COMPLIMENTARY WORLDWIDE EXPRESS SHIPPING ON ORDERS OVER $250</span>
+      </div>
+      <div class="announcement-right">
+        <a href="#newsletter" class="announcement-link">VIP Atelier Access</a>
+        <span class="divider">|</span>
+        <span class="currency-badge">USD ($) &bull; EN</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation & Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Mobile Menu Hamburger (Pure CSS checkbox trick) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="hamburger-btn" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <!-- Brand Identity / Logo -->
+      <div class="brand-logo">
+        <a href="#hero" class="logo-link">
+          <span class="logo-eyebrow">MAISON DE HAUTE COUTURE</span>
+          <span class="logo-main">VÉRITÉ</span>
+          <span class="logo-sub">PARIS &bull; MILANO &bull; NEW YORK</span>
+        </a>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <!-- Close button inside mobile drawer -->
+        <div class="mobile-drawer-header">
+          <span class="drawer-title">VÉRITÉ MENU</span>
+          <label for="nav-toggle" class="close-drawer-btn" aria-label="Close menu">&times;</label>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="#categories" class="nav-link">Women <span class="caret">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <span class="dropdown-heading">Apparel</span>
+                <a href="#featured">Cashmere Coats</a>
+                <a href="#featured">Silk Slip Dresses</a>
+                <a href="#featured">Tailored Blazers</a>
+                <a href="#new-arrivals">Pleated Midi Skirts</a>
+              </div>
+              <div class="dropdown-column">
+                <span class="dropdown-heading">Curated Edits</span>
+                <a href="#collections">Monochromatic Edit</a>
+                <a href="#collections">Resort & Evening Gala</a>
+                <a href="#special-offers">Archive Sale &mdash; 50% Off</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#categories" class="nav-link">Men <span class="caret">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <span class="dropdown-heading">Tailoring</span>
+                <a href="#featured">Mohair Tuxedos</a>
+                <a href="#featured">Double-Breasted Overcoats</a>
+                <a href="#best-sellers">Mongolian Cashmere</a>
+                <a href="#categories">Poplin Dress Shirts</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#categories" class="nav-link">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a href="#categories" class="nav-link">Shoes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#categories" class="nav-link">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a href="#collections" class="nav-link">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a href="#special-offers" class="nav-link highlight-sale">Private Sale <span class="badge-mini">50%</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities (Search, Account, Wishlist, Cart) -->
+      <div class="header-actions">
+        <!-- Pure CSS Interactive Search Bar -->
+        <div class="search-box">
+          <input type="text" placeholder="Search curated luxury..." class="search-input" aria-label="Search luxury products">
+          <button type="button" class="action-btn search-submit-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Account Link -->
+        <a href="#newsletter" class="action-btn account-btn" aria-label="Client Account" title="Client Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <!-- Wishlist -->
+        <a href="#featured" class="action-btn wishlist-btn" aria-label="Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="counter-badge">2</span>
+        </a>
+
+        <!-- Shopping Cart -->
+        <a href="#featured" class="action-btn cart-btn" aria-label="Shopping Cart" title="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="counter-badge gold-badge">3</span>
+        </a>
+      </div>
+
+      <!-- Backdrop overlay for mobile menu -->
+      <label for="nav-toggle" class="nav-overlay" aria-hidden="true"></label>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-backdrop"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="gold-line"></span>
+          <span>AUTUMN / WINTER 2026 RUNWAY</span>
+        </div>
+        <h1 class="hero-title">Timeless Elegance, <br><em>Defined by You.</em></h1>
+        <p class="hero-description">
+          An ode to bespoke architectural tailoring, ethically harvested Italian cashmere, and ethereal silk silhouettes crafted for the modern visionary.
+        </p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn btn-primary">
+            <span>Shop The Collection</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#collections" class="btn btn-secondary">
+            <span>Explore Lookbook</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Organic Mulberry Silk</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Hand-Finished</span>
+            <span class="stat-label">Florentine Atelier</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Carbon Neutral</span>
+            <span class="stat-label">Express Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card visual-card-primary">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80" alt="Haute couture editorial model in beige cashmere coat" class="hero-img">
+          <div class="visual-tag">
+            <span class="tag-title">LOOK 07 &mdash; MILAN ARCHIVE</span>
+            <span class="tag-price">Pure Camel Hair Double Coat &bull; $1,180</span>
+          </div>
+        </div>
+        <div class="visual-card visual-card-float">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Autumn collection runway model" class="float-img">
+          <div class="float-badge">
+            <span class="sparkle">&#10022;</span>
+            <span>Vogue Paris Feature</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Trust & Value Pillars Bar -->
+  <section class="trust-bar" aria-label="Customer guarantees">
+    <div class="container trust-container">
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </div>
+        <div class="trust-info">
+          <h4>Complimentary Express Shipping</h4>
+          <p>Delivered duty-free within 2-3 business days worldwide.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div class="trust-info">
+          <h4>Certified Artisan Craftsmanship</h4>
+          <p>100% authentic materials verified by Italian guilds.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+        </div>
+        <div class="trust-info">
+          <h4>30-Day Bespoke Returns</h4>
+          <p>Complimentary doorstep courier pickup & instant exchange.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <div class="trust-info">
+          <h4>24/7 VIP Concierge</h4>
+          <p>Personal stylist consultations via video and direct line.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clothing Categories Section (5 Categories: Men, Women, Kids, Shoes, Accessories) -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">THE ARCHIVE DISCOVERIES</span>
+        <h2 class="section-title">Explore Haute Categories</h2>
+        <p class="section-subtitle">Tailored silhouettes and handcrafted essentials engineered for enduring grace across every generation.</p>
+      </div>
+
+      <div class="categories-grid">
+        
+        <!-- Category 1: Women -->
+        <div class="category-card category-card-large">
+          <div class="category-media">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80" alt="Women's Haute Couture and tailoring" class="category-img">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-details">
+            <span class="category-count">184 DESIGNS</span>
+            <h3 class="category-name">Women's Atelier</h3>
+            <p class="category-desc">Ethereal silk slip gowns, tailored structured coats, and cashmere knitwear.</p>
+            <a href="#featured" class="category-link">
+              <span>Explore Collection</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category 2: Men -->
+        <div class="category-card category-card-large">
+          <div class="category-media">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80" alt="Men's Sartorial Suits and Cashmere Coats" class="category-img">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-details">
+            <span class="category-count">142 DESIGNS</span>
+            <h3 class="category-name">Men's Sartorial</h3>
+            <p class="category-desc">Architectural wool-mohair suits, double-breasted trench coats, and poplin shirts.</p>
+            <a href="#featured" class="category-link">
+              <span>Explore Collection</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category 3: Kids -->
+        <div class="category-card">
+          <div class="category-media">
+            <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=700&q=80" alt="Kids luxury apparel" class="category-img">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-details">
+            <span class="category-count">68 DESIGNS</span>
+            <h3 class="category-name">Petite Noblesse (Kids)</h3>
+            <p class="category-desc">Heirloom velvet capes, organic cotton pinafores, and festive knitwear.</p>
+            <a href="#featured" class="category-link">
+              <span>Explore Collection</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category 4: Shoes -->
+        <div class="category-card">
+          <div class="category-media">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Designer shoes and heels" class="category-img">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-details">
+            <span class="category-count">96 DESIGNS</span>
+            <h3 class="category-name">Artisan Footwear</h3>
+            <p class="category-desc">Hand-welted Italian leather Chelsea boots, sculpted heels, and calfskin loafers.</p>
+            <a href="#featured" class="category-link">
+              <span>Explore Collection</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category 5: Accessories -->
+        <div class="category-card">
+          <div class="category-media">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Luxury handbags and accessories" class="category-img">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-details">
+            <span class="category-count">115 DESIGNS</span>
+            <h3 class="category-name">Fine Accessories</h3>
+            <p class="category-desc">Structured leather crossbody bags, pure silk foulards, and 18k gold vermeil jewelry.</p>
+            <a href="#featured" class="category-link">
+              <span>Explore Collection</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Collections Section (Trending & Seasonal Fashion) -->
+  <section class="section collections-section" id="collections">
+    <div class="container">
+      <div class="section-header">
+        <div class="header-flex">
+          <div>
+            <span class="section-eyebrow">EDITORIAL RUNWAY CAPSULES</span>
+            <h2 class="section-title">Trending & Seasonal Collections</h2>
+          </div>
+          <a href="#featured" class="btn-text-gold">View Complete Runway Lookbook &rarr;</a>
+        </div>
+      </div>
+
+      <div class="collections-dual-grid">
+        <!-- Collection 1: Seasonal Autumn/Winter -->
+        <div class="collection-banner banner-autumn">
+          <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200&q=80" alt="Autumn Winter Luxury Fashion Collection" class="banner-bg">
+          <div class="collection-content">
+            <span class="collection-tag">SEASONAL EDIT &bull; AW 26</span>
+            <h3 class="collection-title">The Monochromatic<br>Cashmere Edit</h3>
+            <p class="collection-text">
+              Embrace winter minimalism through fluid proportions, textured camel weaves, and cloud-soft Scottish alpaca.
+            </p>
+            <div class="collection-cta">
+              <a href="#featured" class="btn btn-primary">Discover Autumn Edit</a>
+              <span class="curated-note">Limited Batch &bull; 250 Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 2: Trending Gala & Resort -->
+        <div class="collection-banner banner-resort">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80" alt="Monaco Resort and Gala evening wear" class="banner-bg">
+          <div class="collection-content">
+            <span class="collection-tag">TRENDING RUNWAY</span>
+            <h3 class="collection-title">Monaco Gala &<br>Evening Silk</h3>
+            <p class="collection-text">
+              Dramatic cape-back silhouettes, bias-cut emerald silks, and hand-embroidered Austrian crystals for unforgettable galas.
+            </p>
+            <div class="collection-cta">
+              <a href="#featured" class="btn btn-primary">Discover Evening Wear</a>
+              <span class="curated-note">Couture Atelier Handcrafted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section (With Discount Badges, Ratings, Swatches & Hover Actions) -->
+  <section class="section featured-section" id="featured">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">CURATED SIGNATURE PIECES</span>
+        <h2 class="section-title">Featured Haute Couture</h2>
+        <p class="section-subtitle">Meticulously crafted with museum-grade fabrics, tailored to perfection with exclusive seasonal pricing.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill">-30% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80" alt="Sovereign Double-Breasted Cashmere Coat" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-camel active" title="Camel Tan"></span>
+              <span class="swatch swatch-black" title="Obsidian Black"></span>
+              <span class="swatch swatch-cream" title="Alabaster Cream"></span>
+            </div>
+            <span class="product-category">Women's Outerwear</span>
+            <h3 class="product-name"><a href="#featured">Sovereign Double-Breasted Cashmere Coat</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(5.0 &bull; 84 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$890</span>
+              <span class="price-original">$1,280</span>
+              <span class="price-save">Save $390</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill discount-pill-special">-25% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" alt="Milano Tailored Wool-Mohair Tuxedo Blazer" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-black active" title="Midnight Tuxedo"></span>
+              <span class="swatch swatch-navy" title="Deep Navy"></span>
+            </div>
+            <span class="product-category">Men's Sartorial</span>
+            <h3 class="product-name"><a href="#featured">Milano Tailored Wool-Mohair Tuxedo Blazer</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.9 &bull; 62 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$720</span>
+              <span class="price-original">$960</span>
+              <span class="price-save">Save $240</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill">-35% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80" alt="Mulberry Silk Bias-Cut Gown" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-champagne active" title="Champagne Gold"></span>
+              <span class="swatch swatch-emerald" title="Emerald Forest"></span>
+              <span class="swatch swatch-black" title="Noir"></span>
+            </div>
+            <span class="product-category">Women's Evening</span>
+            <h3 class="product-name"><a href="#featured">Mulberry Silk Bias-Cut Gala Gown</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.9 &bull; 114 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$480</span>
+              <span class="price-original">$740</span>
+              <span class="price-save">Save $260</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill discount-pill-gold">ICONIC EDIT</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Florence Hand-Stitched Leather Crossbody Bag" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-cognac active" title="Cognac Leather"></span>
+              <span class="swatch swatch-black" title="Black Box Calf"></span>
+              <span class="swatch swatch-taupe" title="Warm Taupe"></span>
+            </div>
+            <span class="product-category">Leather Goods &bull; Bags</span>
+            <h3 class="product-name"><a href="#featured">Florence Hand-Stitched Flap Crossbody</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(5.0 &bull; 176 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$590</span>
+              <span class="price-original">$850</span>
+              <span class="price-save">Save $260</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill">-30% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1638247025967-b4e38f787b76?auto=format&fit=crop&w=800&q=80" alt="Verona Sculpted Suede Chelsea Boots" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-taupe active" title="Smoked Taupe"></span>
+              <span class="swatch swatch-black" title="Jet Black"></span>
+            </div>
+            <span class="product-category">Artisan Footwear</span>
+            <h3 class="product-name"><a href="#featured">Verona Sculpted Calf-Suede Chelsea Boots</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.8 &bull; 58 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$420</span>
+              <span class="price-original">$600</span>
+              <span class="price-save">Save $180</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill">-25% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80" alt="Minimalist Organic Linen Oversized Shirt" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-cream active" title="Natural Flax"></span>
+              <span class="swatch swatch-white" title="Crisp White"></span>
+              <span class="swatch swatch-olive" title="Olive Sage"></span>
+            </div>
+            <span class="product-category">Unisex Atelier</span>
+            <h3 class="product-name"><a href="#featured">Minimalist French Linen Oversized Shirt</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.9 &bull; 92 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$240</span>
+              <span class="price-original">$320</span>
+              <span class="price-save">Save $80</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill">-22% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80" alt="Ribbed Mongolian Cashmere Turtleneck" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-black active" title="Obsidian"></span>
+              <span class="swatch swatch-camel" title="Warm Oatmeal"></span>
+              <span class="swatch swatch-grey" title="Heather Grey"></span>
+            </div>
+            <span class="product-category">Men's Knitwear</span>
+            <h3 class="product-name"><a href="#featured">Ribbed Grade-A Mongolian Cashmere Sweater</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(5.0 &bull; 134 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$380</span>
+              <span class="price-original">$490</span>
+              <span class="price-save">Save $110</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="discount-pill discount-pill-special">-25% OFF</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist" title="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Petite Royale Velvet Holiday Cape & Dress" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+              <a href="#newsletter" class="quick-btn quick-view">Quick View</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <div class="swatches">
+              <span class="swatch swatch-bordeaux active" title="Bordeaux Ruby"></span>
+              <span class="swatch swatch-navy" title="Royal Midnight"></span>
+            </div>
+            <span class="product-category">Kids &bull; Petite Noblesse</span>
+            <h3 class="product-name"><a href="#featured">Petite Royale Silk-Velvet Cape & Dress</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.9 &bull; 47 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$260</span>
+              <span class="price-original">$350</span>
+              <span class="price-save">Save $90</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="catalog-cta text-center">
+        <a href="#new-arrivals" class="btn btn-primary-dark">
+          <span>Discover Complete 2026 Archive (240+ Styles)</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers & Discount Banner Section -->
+  <section class="section special-offers-section" id="special-offers">
+    <div class="container">
+      <div class="offer-banner-card">
+        <div class="offer-content">
+          <div class="offer-badge-row">
+            <span class="vip-exclusive-pill">PRIVATE ATELIER PRIVILEGE</span>
+            <span class="live-status">&#9679; SALE ENDS IN 48 HOURS</span>
+          </div>
+
+          <h2 class="offer-title">Mid-Season Private Sale<br><em>Up to 50% Off Archive Icons</em></h2>
+          <p class="offer-description">
+            Complimentary access reserved for our distinguished patrons. Receive private pricing on runway overcoats, handcrafted footwear, and tailored silk essentials.
+          </p>
+
+          <!-- Pure CSS styled luxury countdown display -->
+          <div class="countdown-container">
+            <div class="countdown-unit">
+              <span class="countdown-num">02</span>
+              <span class="countdown-label">DAYS</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-num">14</span>
+              <span class="countdown-label">HOURS</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-num">38</span>
+              <span class="countdown-label">MINS</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-num">45</span>
+              <span class="countdown-label">SECS</span>
+            </div>
+          </div>
+
+          <!-- Promo Code Card -->
+          <div class="promo-box">
+            <div class="promo-info">
+              <span class="promo-label">APPLY ATELIER INVITATION CODE:</span>
+              <span class="promo-code">LUXE50</span>
+            </div>
+            <span class="promo-instruction">Instant 50% Applied At Checkout</span>
+          </div>
+
+          <div class="offer-actions">
+            <a href="#featured" class="btn btn-primary">
+              <span>Claim Private Offer &rarr;</span>
+            </a>
+            <span class="offer-terms">*Applies automatically to select archive items. Free returns included.</span>
+          </div>
+        </div>
+
+        <div class="offer-visual">
+          <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=80" alt="Private Luxury Sale Model in Autumn Ensemble" class="offer-img">
+          <div class="floating-discount-tag">
+            <span class="discount-percent">50%</span>
+            <span class="discount-sub">ARCHIVE PRIVILEGE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopping Section: New Arrivals -->
+  <section class="section new-arrivals-section" id="new-arrivals">
+    <div class="container">
+      <div class="section-header">
+        <div class="header-flex">
+          <div>
+            <span class="section-eyebrow">JUST DEBUTED IN PARIS</span>
+            <h2 class="section-title">New Arrivals</h2>
+            <p class="section-subtitle">Fresh silhouettes from the Autumn/Winter runway, available in limited quantities.</p>
+          </div>
+          <a href="#featured" class="btn-text-gold">View All New Arrivals &rarr;</a>
+        </div>
+      </div>
+
+      <div class="product-grid product-grid-4">
+
+        <!-- New Arrival 1 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge new-badge">NEW IN</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" alt="Sculpted Cocoon Trench Coat" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Outerwear</span>
+            <h3 class="product-name"><a href="#new-arrivals">The Sculpted Cocoon Trench Coat</a></h3>
+            <div class="product-pricing">
+              <span class="price-current">$940</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Arrival 2 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge new-badge">NEW IN</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=800&q=80" alt="Pleated Silk Jacquard Midi Skirt" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Skirts & Tailoring</span>
+            <h3 class="product-name"><a href="#new-arrivals">Pleated Silk Jacquard Midi Skirt</a></h3>
+            <div class="product-pricing">
+              <span class="price-current">$520</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Arrival 3 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge new-badge">NEW IN</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=800&q=80" alt="Handcrafted Burnished Calfskin Loafers" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Footwear</span>
+            <h3 class="product-name"><a href="#new-arrivals">Hand-Burnished Calfskin Loafers</a></h3>
+            <div class="product-pricing">
+              <span class="price-current">$460</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Arrival 4 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge new-badge">NEW IN</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80" alt="Minimalist Chronograph Atelier Watch" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Fine Horology</span>
+            <h3 class="product-name"><a href="#new-arrivals">Minimalist Swiss Movement Chronograph</a></h3>
+            <div class="product-pricing">
+              <span class="price-current">$680</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopping Section: Best Sellers -->
+  <section class="section best-sellers-section" id="best-sellers">
+    <div class="container">
+      <div class="section-header">
+        <div class="header-flex">
+          <div>
+            <span class="section-eyebrow">TIMELESS CLIENT FAVORITES</span>
+            <h2 class="section-title">Best Sellers</h2>
+            <p class="section-subtitle">The perennial wardrobe icons celebrated by fashion critics and loyal patrons globally.</p>
+          </div>
+          <a href="#featured" class="btn-text-gold">Shop All Best Sellers &rarr;</a>
+        </div>
+      </div>
+
+      <div class="product-grid product-grid-4">
+
+        <!-- Best Seller 1 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge best-badge">&#9733; BEST SELLER</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80" alt="Velvet Evening Gala Gown" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Gala Edit</span>
+            <h3 class="product-name"><a href="#best-sellers">Archival Velvet Evening Column Gown</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(5.0 &bull; 218 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$650</span>
+              <span class="price-original">$890</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Best Seller 2 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge best-badge">&#9733; BEST SELLER</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&fit=crop&w=800&q=80" alt="Structured Saddle Leather Shoulder Bag" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-name"><a href="#best-sellers">Structured Saddle Vegetable Leather Bag</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.9 &bull; 194 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$540</span>
+              <span class="price-original">$720</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Best Seller 3 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge best-badge">&#9733; BEST SELLER</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80" alt="Minimalist Leather Studio Sneakers" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Shoes</span>
+            <h3 class="product-name"><a href="#best-sellers">The Minimalist Calfskin Studio Sneaker</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(4.9 &bull; 310 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$320</span>
+              <span class="price-original">$410</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Best Seller 4 -->
+        <div class="product-card">
+          <div class="product-media">
+            <span class="status-badge best-badge">&#9733; BEST SELLER</span>
+            <button class="wishlist-trigger" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80" alt="Architectural Tailored Wool Coat" class="product-img">
+            <div class="product-quick-actions">
+              <a href="#newsletter" class="quick-btn quick-cart">Add To Bag</a>
+            </div>
+          </div>
+          <div class="product-meta">
+            <span class="product-category">Men's Tailoring</span>
+            <h3 class="product-name"><a href="#best-sellers">Architectural Virgin Wool Single Coat</a></h3>
+            <div class="product-rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(5.0 &bull; 148 reviews)</span>
+            </div>
+            <div class="product-pricing">
+              <span class="price-current">$780</span>
+              <span class="price-original">$980</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Press Badges Bar -->
+  <section class="press-bar" aria-label="Press mentions">
+    <div class="container press-container">
+      <span class="press-headline">AS ACCLAIMED BY GLOBAL FASHION HOUSES &amp; CRITICS</span>
+      <div class="press-logos">
+        <span class="press-name">VOGUE</span>
+        <span class="press-divider">&bull;</span>
+        <span class="press-name">HARPER'S BAZAAR</span>
+        <span class="press-divider">&bull;</span>
+        <span class="press-name">GQ MAGAZINE</span>
+        <span class="press-divider">&bull;</span>
+        <span class="press-name">ELLE MONDE</span>
+        <span class="press-divider">&bull;</span>
+        <span class="press-name">VANITY FAIR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">VERIFIED CLIENT TESTIMONIALS</span>
+        <h2 class="section-title">Words from Our Patrons</h2>
+        <p class="section-subtitle">Distinguished individuals sharing their experience with our Florentine tailoring and couture service.</p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <!-- Review Card 1 -->
+        <div class="review-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "The Sovereign Cashmere Coat is nothing short of breathtaking. The weight, drape, and hand-finished seams easily surpass luxury houses that charge triple. It has become my signature winter piece in London."
+          </p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Lady Genevieve St. Claire" class="reviewer-avatar">
+            <div class="reviewer-meta">
+              <span class="reviewer-name">Lady Genevieve St. Claire</span>
+              <span class="reviewer-title">Art Director &bull; London, UK</span>
+              <span class="verified-badge">&#10003; Verified Patron &bull; Cashmere Coat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="review-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "Ordered the Milano Mohair Tuxedo for an opera gala in Milan. The tailoring felt like a bespoke Savile Row commission straight out of the box. The concierge team answered my sizing queries within minutes."
+          </p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Alessandro Marchetti" class="reviewer-avatar">
+            <div class="reviewer-meta">
+              <span class="reviewer-name">Alessandro Marchetti</span>
+              <span class="reviewer-title">Architectural Designer &bull; Milan, Italy</span>
+              <span class="verified-badge">&#10003; Verified Patron &bull; Mohair Tuxedo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="review-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "The bias-cut silk gala gown is sheer poetry in motion. The silk slips over the skin like water, and the champagne tone has a radiant warm luster in evening lighting. Exceptional packaging and sustainable luxury."
+          </p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Claire DuPont" class="reviewer-avatar">
+            <div class="reviewer-meta">
+              <span class="reviewer-name">Claire DuPont</span>
+              <span class="reviewer-title">Private Equity Partner &bull; New York, USA</span>
+              <span class="verified-badge">&#10003; Verified Patron &bull; Silk Slip Gown</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Metrics Banner -->
+      <div class="metrics-row">
+        <div class="metric-item">
+          <span class="metric-val">4.96 / 5.0</span>
+          <span class="metric-name">Average Client Satisfaction</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-val">18,400+</span>
+          <span class="metric-name">Bespoke Pieces Delivered</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-val">42 Countries</span>
+          <span class="metric-name">Worldwide Express Reach</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-val">100%</span>
+          <span class="metric-name">Traceable Ethical Silk & Wool</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Section (VIP Atelier Privé) -->
+  <section class="section newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-decor-line"></div>
+        <div class="newsletter-content text-center">
+          <span class="newsletter-eyebrow">BY INVITATION ONLY</span>
+          <h2 class="newsletter-title">Join The Atelier Privé</h2>
+          <p class="newsletter-description">
+            Be the first to preview private runway shows, access closed seasonal archives, and receive a complimentary <strong>$100 Atelier voucher</strong> toward your inaugural order over $400.
+          </p>
+
+          <form class="newsletter-form" action="#newsletter" method="get">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your distinguished email address..." required class="email-input" aria-label="Email address for VIP newsletter">
+              <button type="submit" class="btn btn-subscribe">
+                <span>Request Membership</span>
+                <span class="arrow">&rarr;</span>
+              </button>
+            </div>
+            <div class="form-checkbox-row">
+              <label class="custom-checkbox">
+                <input type="checkbox" checked required>
+                <span class="checkmark"></span>
+                <span class="checkbox-label">I agree to receive personalized editorial dispatches and agree to the Atelier Privacy Charter.</span>
+              </label>
+            </div>
+          </form>
+
+          <div class="vip-perks">
+            <div class="perk-item">
+              <span class="perk-icon">&#10003;</span>
+              <span>Private Runway Previews</span>
+            </div>
+            <div class="perk-item">
+              <span class="perk-icon">&#10003;</span>
+              <span>Bespoke Monogramming</span>
+            </div>
+            <div class="perk-item">
+              <span class="perk-icon">&#10003;</span>
+              <span>Complimentary Courier Returns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Contact Information, Links, and Socials -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      
+      <!-- Brand Column -->
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <span class="logo-main">VÉRITÉ</span>
+          <span class="logo-sub">ATELIER HAUTE COUTURE</span>
+        </div>
+        <p class="footer-bio">
+          Founded in 1994 across Paris and Florence, Vérité Atelier curates modern luxury defined by sculptural tailoring, sustainable materials, and uncompromising European craftsmanship.
+        </p>
+        <div class="boutique-hours">
+          <span class="hours-label">Flagship Boutiques:</span>
+          <span>Paris &bull; 24 Rue du Faubourg Saint-Honoré</span>
+          <span>New York &bull; 740 Madison Avenue</span>
+          <span>Milan &bull; Via Montenapoleone 18</span>
+        </div>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#categories">Women's Ready-to-Wear</a></li>
+          <li><a href="#categories">Men's Sartorial Edit</a></li>
+          <li><a href="#categories">Petite Noblesse (Kids)</a></li>
+          <li><a href="#categories">Artisan Handcrafted Footwear</a></li>
+          <li><a href="#categories">Leathergoods &amp; Fine Jewelry</a></li>
+          <li><a href="#collections">Autumn/Winter Runway Edit</a></li>
+          <li><a href="#special-offers">Private Archive Sale</a></li>
+        </ul>
+      </div>
+
+      <!-- Client Services -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Client Services</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Book a VIP Styling Appointment</a></li>
+          <li><a href="#hero">Complimentary Bespoke Tailoring</a></li>
+          <li><a href="#hero">Worldwide Express Delivery</a></li>
+          <li><a href="#hero">Track Consignment</a></li>
+          <li><a href="#hero">Bespoke Returns &amp; Exchanges</a></li>
+          <li><a href="#hero">Garment Care &amp; Cashmere Preservation</a></li>
+          <li><a href="#hero">Certificate of Authenticity</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Flagship Concierge -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Concierge Contact</h4>
+        <div class="contact-details">
+          <div class="contact-entry">
+            <span class="contact-icon">&#9993;</span>
+            <div>
+              <span class="contact-label">VIP Client Relations:</span>
+              <a href="mailto:concierge@verite-atelier.com" class="contact-value">concierge@verite-atelier.com</a>
+            </div>
+          </div>
+          <div class="contact-entry">
+            <span class="contact-icon">&#9742;</span>
+            <div>
+              <span class="contact-label">Direct Concierge Line:</span>
+              <a href="tel:+18005558374" class="contact-value">+1 (800) 555-VÉRITÉ</a>
+            </div>
+          </div>
+          <div class="contact-entry">
+            <span class="contact-icon">&#128340;</span>
+            <div>
+              <span class="contact-label">Private Styling Hours:</span>
+              <span class="contact-plain">Mon &ndash; Sat: 09:00 &ndash; 20:00 CET</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="footer-heading follow-heading">Follow The Atelier</h4>
+        <div class="social-links">
+          <a href="https://instagram.com" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://pinterest.com" class="social-icon" aria-label="Pinterest" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.19-.77 1.25-5.32 1.25-5.32s-.32-.64-.32-1.58c0-1.48.86-2.59 1.93-2.59.91 0 1.35.68 1.35 1.5 0 .91-.58 2.28-.88 3.55-.25 1.06.53 1.92 1.58 1.92 1.9 0 3.37-2 3.37-4.89 0-2.56-1.84-4.35-4.47-4.35-3.05 0-4.84 2.29-4.84 4.65 0 .92.35 1.91.8 2.45.09.11.1.2.07.31-.08.32-.26 1.05-.29 1.2-.05.21-.17.25-.38.16-1.43-.66-2.32-2.74-2.32-4.41 0-3.6 2.62-6.9 7.54-6.9 3.96 0 7.04 2.82 7.04 6.6 0 3.93-2.48 7.1-5.92 7.1-1.16 0-2.24-.6-2.61-1.31l-.71 2.71c-.26 1-.96 2.25-1.43 3.01.99.31 2.05.47 3.15.47 5.52 0 10-4.48 10-10S17.52 2 12 2z"></path>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" class="social-icon" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Payment Methods Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="footer-legal">
+          <span>&copy; 2026 VÉRITÉ ATELIER S.A. ALL RIGHTS RESERVED.</span>
+          <span class="legal-links">
+            <a href="#hero">Privacy Charter</a>
+            <span class="bullet">&bull;</span>
+            <a href="#hero">Terms of Service</a>
+            <span class="bullet">&bull;</span>
+            <a href="#hero">Ethics &amp; Supply Chain Transparency</a>
+            <span class="bullet">&bull;</span>
+            <a href="#hero">Cookies Settings</a>
+          </span>
+        </div>
+
+        <div class="payment-methods" aria-label="Accepted payment methods">
+          <span class="payment-badge">VISA</span>
+          <span class="payment-badge">MASTERCARD</span>
+          <span class="payment-badge">AMEX</span>
+          <span class="payment-badge">APPLE PAY</span>
+          <span class="payment-badge">PAYPAL</span>
+          <span class="payment-badge">KLARNA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
